@@ -7,53 +7,54 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    text-align: center;
 }
 
 .container {
-    text-align: center;
     padding: 20px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 2rem; /* Tamanho de fonte flexível */
     color: #333;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Colunas flexíveis */
+    gap: 1rem; /* Espaçamento flexível entre blocos */
     width: 100%;
-    max-width: 1200px;
     margin-top: 20px;
 }
 
 .block {
     background-color: #e3f2fd;
     border: 1px solid #90caf9;
-    padding: 10px;
+    padding: 1rem; /* Espaçamento flexível */
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     font-family: 'Courier New', Courier, monospace;
     color: #333;
     position: relative;
+    font-size: 1rem; /* Tamanho de fonte flexível */
 }
 
 .block-number {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1.2rem; /* Tamanho de fonte flexível */
     margin-bottom: 8px;
     color: #0d47a1;
 }
 
 .block .range {
-    font-size: 14px;
+    font-size: 1rem; /* Tamanho de fonte flexível */
     margin: 5px 0;
-    text-align: right;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    white-space: pre;
+    flex-direction: column; /* Alinha o conteúdo em uma coluna */
+    text-align: left; /* Alinha o texto à esquerda */
+    white-space: normal; /* Permite que o texto quebre em várias linhas */
 }
 
 .block .range:first-child {
@@ -70,19 +71,23 @@ h1 {
     cursor: pointer;
     color: #333;
     margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 1rem; /* Tamanho de fonte flexível */
+    border-radius: 5px;
 }
 
 .copy-button:hover {
     color: #007BFF;
+    background-color: #bbdefb;
 }
 
 .back-button {
     margin: 20px;
-    padding: 10px 20px;
+    padding: 0.75rem 1.5rem; /* Espaçamento flexível */
     background-color: #ffccbc;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem; /* Tamanho de fonte flexível */
     color: #333;
     cursor: pointer;
     font-weight: bold;
@@ -96,24 +101,10 @@ h1 {
     background-color: #ffab91;
 }
 
-.copy-button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    font-size: 12px;
-    background-color: #bbdefb;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.copy-button:hover {
-    background-color: #90caf9;
-}
-
 .divide-button {
     margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 0.75rem 1.5rem; /* Espaçamento flexível */
+    font-size: 1rem; /* Tamanho de fonte flexível */
     background-color: #ffcc80;
     border: none;
     border-radius: 5px;
