@@ -63,6 +63,6 @@ function createBlocks(startHex, endHex, level = '') {
 // Executa a função quando a página for carregada
 window.onload = () => {
 
-    createBlocks(BigInt('0x80000000000000000'), 
-                 BigInt('0xfffffffffffffffff'));
+    createBlocks(BigInt('0x100000000000000000'), 
+                 BigInt('0x1fffffffffffffffff'));
 };
